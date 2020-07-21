@@ -29,7 +29,7 @@ public class Main {
     /**
      * 采用递归和分而治之的思想
      * 设长度为n的序列能构成的二叉搜索树个数为dp[n]
-     * 能够推断出dp[n] = ∑dp[i-1] + dp[n-i]，i为序列中的当前节点
+     * 能够推断出dp[n] = ∑(dp[i-1]*dp[n-i])，i为序列中的当前节点
      * dp[0]和dp[1]为1
      * @param n
      * @return
