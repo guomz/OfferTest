@@ -62,6 +62,13 @@ public class Main {
         return result;
     }
 
+    /**
+     * 由回文中心向两侧扩散，遇到两指针不相同则推出
+     * @param s
+     * @param j
+     * @param k
+     * @return
+     */
     private static int checkStr(String s, int j, int k){
         int result = 0;
         while (j >= 0 && k < s.length()){
