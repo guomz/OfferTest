@@ -32,6 +32,12 @@ public class Main {
         System.out.println(countSubstrings("fdsklf"));
     }
 
+    /**
+     * 如果遍历每个字符为开头或结尾去枚举回文串会出现立方级别的算法
+     * 所以采用遍历回文中心的方法，时间复杂度为平方
+     * @param s
+     * @return
+     */
     public static int countSubstrings(String s) {
         if (s == null){
             return 0;
